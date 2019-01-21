@@ -1,0 +1,6 @@
+# Development environment
+.vscode
+.DS_Store
+
+# Output
+output
