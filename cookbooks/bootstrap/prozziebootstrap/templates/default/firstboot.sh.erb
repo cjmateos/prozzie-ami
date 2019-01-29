@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Prozzie first boot
+if [ ! -f <%= @wizzie_home %>/.installed ]; then
+  sudo bash <%= @prozzie_dir %>/prozzie/setups/linux_setup.sh
+  [ "x$?" == "x0" ] && date > <%= @wizzie_home %>/.installed
+fi
